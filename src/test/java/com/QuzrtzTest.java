@@ -36,6 +36,9 @@ public class QuzrtzTest {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         SimpleDateFormat DateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+        Thread t = new Thread(()->{
+            System.out.println("hello");
+        });
         Date d = new Date();
         String returnstr = DateFormat.format(d);
 
@@ -88,5 +91,20 @@ public class QuzrtzTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void testArray(){
+        int num1[]={2,3,4};
+        int num2[]={2,3,4,8};
+        int n=0;
+        for(int i=0;i<num1.length;i++){
+            for (int j=0;j<num2.length;j++){
+                if(num2[j]!=num1[i]){
+                    n=num2[j];
+                }
+            }
+        }
+        System.out.println(n);
     }
 }

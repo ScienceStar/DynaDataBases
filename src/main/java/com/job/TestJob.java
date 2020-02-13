@@ -16,11 +16,12 @@ import java.util.Date;
  **/
 public class TestJob implements Job {
     SimpleDateFormat DateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    int i = 0;
     Date d = new Date();
     String returnstr = DateFormat.format(d);
 
     public void execute(JobExecutionContext arg0) throws JobExecutionException {
         // TODO Auto-generated method stub
-        System.out.println(returnstr+"★★★★★★★★★★★");
+        System.out.println(returnstr+"★★★★★★★★★★★"+i++);
     }
 }
