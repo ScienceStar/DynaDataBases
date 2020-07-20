@@ -23,6 +23,6 @@ public class SecheduledTask {
     public void scheduledTaskByCorn() {
         //这里是对某个代码段或者某个功能进行定时操作
         String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-        log.info("定时任务："+date);
+        log.info("**********定时任务："+date);
     }
 }
