@@ -30,7 +30,7 @@ public class MyTransactionTest implements ITestService {
     public void saveTest(int id) {
         saveWitharamters(id, "luozhou@gmail.com");
         saveWitharamters(id + 10, "luozhou@gmail.com");
-        int aa = id / 0;
+       // int aa = id / 0;
     }
 
     @DataSourceSelector(value = DynamicDataSourceEnum.MASTER)
