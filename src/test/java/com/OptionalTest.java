@@ -19,8 +19,11 @@ public class OptionalTest {
         Person person = new Person();
         person.setPersonId(123l);
         person.setPersonName("mike");
-        Optional.ofNullable(person).ifPresent(p->{
-            System.out.println(p.getPersonName());
+       Optional.ofNullable(person).ifPresentOrElse(s->{
+           String name =s.getPersonName();
+           System.out.println(name);
+           },()->{
+            System.out.println("用户为空!");
         });
 
         String personName =Optional.of(person).filter(p->p.getPersonId()>=100).map(Person::getPersonName).orElse("");
