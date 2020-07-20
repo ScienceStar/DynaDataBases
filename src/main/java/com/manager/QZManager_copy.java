@@ -1,3 +1,4 @@
+/*
 package com.manager;
 
 import org.quartz.*;
@@ -5,13 +6,15 @@ import org.quartz.impl.StdSchedulerFactory;
 
 import java.text.ParseException;
 
+*/
 /**
  * @ClassName QZManager
  * @Description: TODO
  * @Author lxc
  * @Date 2020/2/10
  * @Version V1.0
- **/
+ **//*
+
 public class QZManager {
 
     private static SchedulerFactory sf = new StdSchedulerFactory();
@@ -19,14 +22,18 @@ public class QZManager {
     private static String TRIGGER_GROUP_NAME = "trigger1";
 
 
-    /** *//**
+    */
+/** *//*
+*/
+/**
      *  添加一个定时任务，使用默认的任务组名，触发器名，触发器组名
      * @param jobName 任务名
      * @param job     任务
      * @param time    时间设置，参考quartz说明文档
      * @throws SchedulerException
      * @throws ParseException
-     */
+     *//*
+
     public static void addJob(String jobName, Job job, String time)
             throws SchedulerException, ParseException {
         Scheduler sched = sf.getScheduler();
@@ -41,7 +48,10 @@ public class QZManager {
             sched.start();
     }
 
-    /** *//**
+    */
+/** *//*
+*/
+/**
      * 添加一个定时任务
      * @param jobName 任务名
      * @param jobGroupName 任务组名
@@ -51,7 +61,8 @@ public class QZManager {
      * @param time    时间设置，参考quartz说明文档
      * @throws SchedulerException
      * @throws ParseException
-     */
+     *//*
+
     public static void addJob(String jobName,String jobGroupName,
                               String triggerName,String triggerGroupName,
                               Job job,String time)
@@ -67,13 +78,17 @@ public class QZManager {
             sched.start();
     }
 
-    /** *//**
+    */
+/** *//*
+*/
+/**
      * 修改一个任务的触发时间(使用默认的任务组名，触发器名，触发器组名)
      * @param jobName
      * @param time
      * @throws SchedulerException
      * @throws ParseException
-     */
+     *//*
+
     public static void modifyJobTime(String jobName,String time)
             throws SchedulerException, ParseException{
         Scheduler sched = sf.getScheduler();
@@ -85,14 +100,18 @@ public class QZManager {
         }
     }
 
-    /** *//**
+    */
+/** *//*
+*/
+/**
      * 修改一个任务的触发时间
      * @param triggerName
      * @param triggerGroupName
      * @param time
      * @throws SchedulerException
      * @throws ParseException
-     */
+     *//*
+
     public static void modifyJobTime(String triggerName,String triggerGroupName,
                                      String time)
             throws SchedulerException, ParseException{
@@ -107,11 +126,15 @@ public class QZManager {
         }
     }
 
-    /** *//**
+    */
+/** *//*
+*/
+/**
      * 移除一个任务(使用默认的任务组名，触发器名，触发器组名)
      * @param jobName
      * @throws SchedulerException
-     */
+     *//*
+
     public static void removeJob(String jobName)
             throws SchedulerException{
         Scheduler sched = sf.getScheduler();
@@ -120,14 +143,18 @@ public class QZManager {
         sched.deleteJob(jobName,JOB_GROUP_NAME);//删除任务
     }
 
-    /** *//**
+    */
+/** *//*
+*/
+/**
      * 移除一个任务
      * @param jobName
      * @param jobGroupName
      * @param triggerName
      * @param triggerGroupName
      * @throws SchedulerException
-     */
+     *//*
+
     public static void removeJob(String jobName,String jobGroupName,
                                  String triggerName,String triggerGroupName)
             throws SchedulerException{
@@ -137,3 +164,4 @@ public class QZManager {
         sched.deleteJob(jobName,jobGroupName);//删除任务
     }
 }
+*/

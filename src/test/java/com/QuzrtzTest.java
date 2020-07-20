@@ -1,27 +1,29 @@
+/*
 package com;
 
-import com.job.HelloJob;
 import com.job.TestJob;
-import com.manager.QZManager;
 import org.junit.Test;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+*/
 /**
  * @ClassName QuzrtzTest
  * @Description: TODO
  * @Author lxc
  * @Date 2020/2/10
  * @Version V1.0
- **/
+ **//*
+
 public class QuzrtzTest {
     private static String JOB_NAME = "JOB_NAME_";
     private static String JOB_GROUP_NAME = "JOB_GROUP_NAME_";
     private static String TRIGGER_NAME = "TRIGGER_NAME_";
     private static String TRIGGER_GROUP_NAME = "TRIGGER_GROUP_NAME_";
 
-    /*public static void main(String[] args) throws SchedulerException {
+    */
+/*public static void main(String[] args) throws SchedulerException {
         QuartzManager quartzManager = new QuartzManager();
         HelloJob job = new HelloJob();
         String id = "hello";
@@ -31,7 +33,8 @@ public class QuzrtzTest {
         String time = "0 0 12 * * ?";
         //设置每天12点执行
         // quartzManager.addCronJob(JOB_NAME+id1,JOB_GROUP_NAME+id1,TRIGGER_NAME+id1,TRIGGER_GROUP_NAME+id1,job,time);
-    }*/
+    }*//*
+
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
@@ -108,3 +111,4 @@ public class QuzrtzTest {
         System.out.println(n);
     }
 }
+*/

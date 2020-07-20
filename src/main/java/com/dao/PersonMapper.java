@@ -2,6 +2,7 @@ package com.dao;
 
 import com.domin.Person;
 import com.common.MyMapper;
+import org.springframework.stereotype.Component;
 
 /**
  * @InterfaceName IPersonDao
@@ -10,5 +11,6 @@ import com.common.MyMapper;
  * @Date 2020/2/8
  * @Version V1.0
  **/
+@Component
 public interface PersonMapper extends MyMapper<Person> {
 }
