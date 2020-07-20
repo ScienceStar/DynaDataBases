@@ -46,6 +46,6 @@ public class PersonServiceTest {
 
     @Test
     public void testAnnotationThings(){
-       testService.saveTest(2);
+       testService.saveTest(3);
     }
 }
