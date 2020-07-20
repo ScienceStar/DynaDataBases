@@ -18,7 +18,7 @@ import java.sql.SQLException;
  **/
 @Component
 public class DataSourceConnectHolder {
-    @Autowired DynamicDataSource dataSource;
+    @Autowired DynamicDataSource dynamicDataSource;
     /**
      * 线程绑定对象
      */
@@ -30,7 +30,7 @@ public class DataSourceConnectHolder {
             return con;
         }
         try {
-            con = dataSource.getConnection();
+            con = dynamicDataSource.getConnection();
             //为了体现事务，全部设置为手动提交事务
             con.setAutoCommit(false);
         } catch (SQLException e) {
